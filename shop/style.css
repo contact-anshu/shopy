@@ -1,0 +1,179 @@
+.all{
+    background-color: rgb(241, 207, 207);
+    margin: 0;
+    padding: 0;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    height: 80px;
+    background: rgb(255, 92, 92);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+nav ul li a:hover,nav ul li a.active
+{   
+    background-color: white;
+    color: rgb(255, 92, 92);
+
+
+}
+
+.logo
+{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+}
+nav ul li
+{
+    margin: 0 5px;
+    
+}
+.menu-btn img{
+    cursor: pointer;
+    display: none;
+}
+#click
+{
+    display: none;
+}
+@media(max-width: 900px)
+{
+    nav ul
+    {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(255, 92, 92);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li a:hover,nav ul li a.active
+    {   
+    background-color: rgb(255, 92, 92);
+    color: rgb(255, 26, 26);
+
+
+}
+
+.logo
+{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+    nav ul li
+    {
+        margin: 40px 0;
+    }
+    .menu-btn img{
+        display: block;
+    }
+}
+.foot
+{
+    text-align: center;
+    padding-top: 50px;
+}
+.ani
+{
+    background-color: rgb(227, 121, 121); height: 600px; border: 20px solid rgb(227, 121, 121); border-radius: 10px; margin: 10px; margin-top: 20px;
+
+}
+
+.ani:hover
+{
+    border: 15px solid rgb(227,121,121);
+}
+.shop_img
+{
+    height: 500px;
+    border-radius: 10px;
+    margin: 30px 30px 30px 200px;
+}
+.shop_card
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.row
+{
+    background-color: rgb(215, 133, 133);
+}
+.contant
+{
+    padding-top:100px;
+}
+.heading
+{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.offer
+{
+    color: rgb(213, 226, 24);
+    font-size: 30px;
+
+}
+.price
+{
+    color: blueviolet;
+    font-size: 40px;
+}
+@media(max-width:900px)
+{
+    .shop_img
+{
+    height: 400px;
+    border-radius: 10px;
+    margin: 30px 30px 30px 30px;
+    align-items: center;
+}
+.shop_card
+{
+    text-align: center;
+}
+.contant
+{
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.shop_btn
+{
+    margin-top: 10px;
+}
+}

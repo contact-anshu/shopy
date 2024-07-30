@@ -1,0 +1,210 @@
+.all{
+    background-color: rgb(241, 207, 207);
+    margin: 0;
+    padding: 0;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    height: 80px;
+    background: rgb(255, 92, 92);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+nav ul li a:hover,nav ul li a.active
+{   
+    background-color: white;
+    color: rgb(255, 92, 92);
+
+
+}
+
+.logo
+{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+}
+nav ul li
+{
+    margin: 0 5px;
+    
+}
+.menu-btn img{
+    cursor: pointer;
+    display: none;
+}
+#click
+{
+    display: none;
+}
+.heading
+{
+    text-align: center; font-size: 30px; color: rgb(255, 92, 92);
+}
+.text_blog
+{
+    text-align: center;
+}
+.btn_blog
+{
+    background-color: rgb(255, 92, 92);
+    border-color: brown; 
+    width: 150px;margin-left: 95px;
+}
+@media(max-width: 900px)
+{
+    .btn_blog
+{
+    background-color: rgb(255, 92, 92);
+    border-color: brown; 
+    width: 150px;
+    margin-left: 0px;
+}
+  
+  
+    .heading
+   {
+    font-size: 25px;
+   }
+   .text_blog
+{
+    text-align: center;
+    font-size: 15px;
+}
+   
+   
+    .logo
+{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+    nav ul
+    {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(255, 92, 92);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li a:hover,nav ul li a.active
+    {   
+    background-color: rgb(255, 92, 92);
+    color: rgb(255, 26, 26);
+
+
+}
+
+    nav ul li
+    {
+        margin: 40px 0;
+    }
+    .menu-btn img{
+        display: block;
+    }
+}
+
+.fashion_card
+{
+    height: 300px;
+}
+.contant
+{
+    background-color: white;
+    margin: 20px;
+    height: 250px;
+    border-radius: 10px;
+
+}
+.contant:hover
+{
+    margin: 15px;
+}
+.blog_img
+{
+    height: 250px;
+    width: auto;
+    float: left;
+
+}
+@media(max-width:900px)
+{
+    .fashion_card
+    {
+        height: 550px;
+        display: block;
+
+    }
+    .contant
+    {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin: 20px;
+        height: 500px;
+        border-radius: 10px;
+    
+    }
+    .contant:hover
+    {
+        margin: 20px;
+    }
+    .blog_img
+    {
+
+        max-width: 100%;
+        float: left;
+    
+    }
+}
+.foot
+{
+    text-align: center;
+    padding-top: 50px;
+}
+.ani
+{
+    background-color: rgb(227, 121, 121); height: 600px; border: 20px solid rgb(227, 121, 121); border-radius: 10px; margin: 10px; margin-top: 20px;
+
+}
+
+.ani:hover
+{
+    border: 15px solid rgb(227,121,121);
+}

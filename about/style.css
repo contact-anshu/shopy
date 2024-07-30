@@ -1,0 +1,197 @@
+.all{
+    background-color: rgb(241, 207, 207);
+    margin: 0;
+    padding: 0;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    height: 80px;
+    background: rgb(255, 92, 92);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+}
+nav ul
+{
+    display: flex;
+    list-style: none;
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+nav ul li a:hover,nav ul li a.active
+{   
+    background-color: white;
+    color: rgb(255, 92, 92);
+
+
+}
+
+.logo
+{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+}
+nav ul li
+{
+    margin: 0 5px;
+    
+}
+.menu-btn img{
+    cursor: pointer;
+    display: none;
+}
+#click
+{
+    display: none;
+}
+@media(max-width: 900px)
+{
+    nav ul
+    {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(255, 92, 92);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li a:hover,nav ul li a.active
+    {   
+    background-color: rgb(255, 92, 92);
+    color: rgb(255, 26, 26);
+
+
+}
+
+    nav ul li
+    {
+        margin: 40px 0;
+    }
+    .menu-btn img{
+        display: block;
+    }
+    .logo{
+        font-size: 30px;
+    }
+}
+
+.patta
+{
+    background-color: rgb(245, 245, 245);
+    height: 400px;
+}
+.about_card
+{
+    margin: 100px 100px 50px 100px;
+    height: 400px;
+}
+
+.img_about
+{
+    height: 400px;
+    width: auto;
+    float: left;
+}
+
+.heading
+{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 35px;
+
+}
+.contant
+{
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+@media(max-width:900px)
+{
+    .about_card
+    {
+        margin: 20px;
+        height: 700px;
+    }
+    .patta
+    {
+        height: 700px;
+    }
+    .img_about
+    {
+        height: 150px;
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot
+{
+    text-align: center;
+    padding-top: 50px;
+}
+.ani
+{
+    background-color: rgb(227, 121, 121); height: 600px; border: 20px solid rgb(227, 121, 121); border-radius: 10px; margin: 10px; margin-top: 20px;
+
+}
+
+.ani:hover
+{
+    border: 15px solid rgb(227,121,121);
+}
